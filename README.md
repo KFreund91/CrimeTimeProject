@@ -4,7 +4,7 @@ Our group was interested in examining information involving personal victimizati
 
 Phase One: ETL
 
-We gathered our data from the Bureau of Justice Statistics in csv format. The data was stored in two seperate files split by years. Data was cleaned using Python and Excel. Data was joined using a SGL union statement. Schema was built and data was loaded into Postgres as one cohesive unit.
+We gathered our data from the Bureau of Justice Statistics in csv format. The data was stored in two seperate files split by years. Data was cleaned using Python and Excel. Data was joined using a SQL union statement. Schema was built and data was loaded into Postgres as one cohesive unit.
 
 Phase Two: Flask app
 
