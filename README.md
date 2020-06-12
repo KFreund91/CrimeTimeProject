@@ -1,6 +1,6 @@
 # CrimeTimeProject
 
-Our group was interested in examining information involving personal victimizations in the U.S. Over the course of two weeks, data was gathered, cleaned, and loaded in a SQL database. The data was then served using a flask app and a website was created using HTMl and JavaScript.
+Our group was interested in examining information involving personal victimizations in the U.S. Over the course of two weeks, data was gathered, cleaned, and loaded in a SQL database. The data was then served using a flask app and a website was created using HTML and JavaScript.
 
 Phase One: ETL
 
