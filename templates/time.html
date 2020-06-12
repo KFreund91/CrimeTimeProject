@@ -37,7 +37,7 @@
         </div>
     </nav>
 
-    <div class="p-3 mb-2 font-weight-bold bg-warning text-dark center">
+    <div class="p-3 mb-2 font-weight-bold bg-warning text-white center">
         <h1 class="text-center">Crime Rates Over Time</h1>
         <h4 class="text-center">Use the legend on the graph to select desired U.S. regions.</h4>
     </div>
@@ -50,13 +50,15 @@
 
     <br>
 
-    <div class="p-3 mb-2 bg-dark text-white">
+    <div class="p-3 mb-2 bg-dark text-dark">
         <h2 class="text-center">Analysis</h2>
-        <h4 class="text-center">Upon examining the graph, one can note the similarities in trends in the Midwest, South and West Regions.
-            These areas observed increases in personal victimizations by over three hundred cases during the period ranging from 2015-2018.
+        <h3 class="text-center">Upon examining the graph, one can note the similarities in trends in the Midwest, South
+            and West Regions.
+            These areas observed increases in personal victimizations by over three hundred cases during the period
+            ranging from 2015-2018.
             These regions also encountered similar spikes in victimizations in 2012.
             Overall, personal victimizations have stayed mostly constant in the Northeast.
-        </h4>
+        </h3>
         <br>
         <br>
     </div>
@@ -70,6 +72,34 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+
+    <script>
+        d3.select("h1")
+            .transition()
+            .duration(3000)
+            .style("color", "black");
+    </script>
+
+    <script>
+        d3.select("h4")
+            .transition()
+            .duration(3000)
+            .style("color", "black");
+    </script>
+
+    <script>
+        d3.select("h2")
+            .transition()
+            .duration(3000)
+            .style("color", "white");
+    </script>
+
+    <script>
+        d3.select("h3")
+            .transition()
+            .duration(3000)
+            .style("color", "white");
+    </script>
 
 
 

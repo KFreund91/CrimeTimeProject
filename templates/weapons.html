@@ -37,7 +37,7 @@
         </div>
     </nav>
 
-    <div class="p-3 mb-2 font-weight-bold bg-warning text-dark center">
+    <div class="p-3 mb-2 font-weight-bold bg-warning text-white center">
         <h1 class="text-center">Weapons Used in Victimizations</h1>
         <h4 class="text-center">Use the dropdown menu below to view information by
             U.S.Region.</h4>
@@ -47,25 +47,25 @@
 
     <div class="container" style="border:1px solid #0a0a0a;">
 
-    <!-- Create a div where the graph will take place -->
-    <div id="plot"></div>
-    <select id="selDataset">
-        <option value="dataset1">Midwest Region</option>
-        <option value="dataset2">Northeast Region</option>
-        <option value="dataset3">South Region</option>
-        <option value="dataset4">West Region</option>
-    </select>
+        <!-- Create a div where the graph will take place -->
+        <div id="plot"></div>
+        <select id="selDataset">
+            <option value="dataset1">Midwest Region</option>
+            <option value="dataset2">Northeast Region</option>
+            <option value="dataset3">South Region</option>
+            <option value="dataset4">West Region</option>
+        </select>
 
     </div>
 
     <br>
 
-    <div class="p-3 mb-2 bg-dark text-white">
+    <div class="p-3 mb-2 bg-dark text-dark">
         <h2 class="text-center">Analysis</h2>
-        <h4 class="text-center">It is interesting that "no weapon" far exceeds all other weapon categories in every
+        <h3 class="text-center">It is interesting that "no weapon" far exceeds all other weapon categories in every
             region.
             This was unexpected given that personal victimizations can often be violent in nature.
-        </h4>
+        </h3>
         <br>
         <br>
     </div>
@@ -79,6 +79,34 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+
+    <script>
+        d3.select("h1")
+            .transition()
+            .duration(3000)
+            .style("color", "black");
+    </script>
+
+    <script>
+        d3.select("h4")
+            .transition()
+            .duration(3000)
+            .style("color", "black");
+    </script>
+
+    <script>
+        d3.select("h2")
+            .transition()
+            .duration(3000)
+            .style("color", "white");
+    </script>
+
+    <script>
+        d3.select("h3")
+            .transition()
+            .duration(3000)
+            .style("color", "white");
+    </script>
 
 </body>
 

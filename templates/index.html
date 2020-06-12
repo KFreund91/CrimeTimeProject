@@ -37,8 +37,9 @@
   <div class="header">
     <h1>U.S. Crime Statistics</h1>
     <p>In an effort to comprehend the types of personal crimes committed nationally,
-      our team analyzed data from the Bureau of Justice Statistics over a 10 year span 
-      (2009 - 2018). We evaluated the relationship between victim and offender, types of weapon used during the crimes, and the
+      our team analyzed data from the Bureau of Justice Statistics over a 10 year span
+      (2009 - 2018). We evaluated the relationship between victim and offender, types of weapon used during the crimes,
+      and the
       number of crimes occuring by region over time. Select from the links below
       to find further details of complete analysis conducted by our team.
     </p>
@@ -46,38 +47,46 @@
   <div class="bg-image"></div>
   <div class="bg-text">
     <h1> Crime Analysis</h1>
-  
+
     <a href="/VOrelationship" style="color:white" class="stretched-link">Victim-Offender Relationship</a><br>
     <a href="/weaponsgraph" style="color:white" class="stretched-link">Weapon Types</a><br>
     <a href="/Time" style="color:white" class="stretched-link">Crime Rates over Time</a>
-    
+
   </div>
   <style>
-   .header {
+    .header {
       padding: 30px;
       text-align: center;
-      color: black;
+      color: white;
       font-weight: bold;
       font-size: 28px;
     }
-   body, html {
-      height: 85%;         
-  }
-  * { 
-    box-sizing: border-box;
-  }
-    .bg-image { 
+
+    body,
+    html {
+      height: 85%;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .bg-image {
       background-image: url('https://yorkliteraturefestival.co.uk/wp-content/uploads/Crime-Panel-Image.jpg');
       filter: blur(2px);
       -webkit-filter: blur(2px);
       height: 70%;
       background-position: center;
-      background-repeat:no-repeat;
-      background-size: cover; 
-  }
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity:0
+    }
+
     .bg-text {
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/opacity/see-through */
       color: white;
       font-weight: bold;
       border: 3px solid #f1f1f1;
@@ -90,8 +99,8 @@
       padding: 60px;
       padding-top: 5px;
       text-align: center;
-  }
-    </style>
+    }
+  </style>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -99,10 +108,31 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
     crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
 </body>
+
+<script>
+  d3.select("h1")
+    .transition()
+    .duration(3000)
+    .style("color", "black");
+</script>
+<script>
+  d3.select("p")
+    .transition()
+    .duration(3000)
+    .style("color", "black");
+</script>
+<script>
+  d3.select(".bg-image")
+    .transition()
+    .duration(3000)
+    .style("opacity", 1);
+</script>
+
 
 
 

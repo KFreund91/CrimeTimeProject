@@ -39,7 +39,7 @@
     </nav>
 
 
-    <div class="p-3 mb-2 font-weight-bold bg-warning text-dark center">
+    <div class="p-3 mb-5 font-weight-bold bg-warning text-white center">
         <h1 class="text-center">Victim-Offender Relationship</h1>
         <h4 class="text-center">Use the dropdown menu below to view information about Victim-Offender Relationships by
             U.S.Region.</h4>
@@ -48,7 +48,7 @@
     <br>
 
     <div class="container" style="border:1px solid #0a0a0a;">
-
+        
         <!-- Create a div where the graph will take place -->
         <div id="plot"></div>
 
@@ -58,20 +58,22 @@
             <option value="dataset3">South Region</option>
             <option value="dataset4">West Region</option>
         </select>
-    
+
     </div>
 
     <br>
 
-    <div class="p-3 mb-2 bg-dark text-white">
+    <div class="p-3 mb-2 bg-dark text-dark">
         <h2 class="text-center">Analysis</h2>
-        <h4 class="text-center">Given that the data centered on personal victimizations, we were interested in examining the Victim-Offender Relationships. 
-            In each region, it can be noted that "strangers" is the primary relationship, followed by "well-known acquaintances." 
-            "Intimates" is the third most common relationship in all four regions, as well.</h4>
-    <br>
-    <br>
+        <h3 class="text-center">Given that the data centered on personal victimizations, we were interested in examining
+            the Victim-Offender Relationships.
+            In each region, it can be noted that "strangers" is the primary relationship, followed by "well-known
+            acquaintances."
+            "Intimates" is the third most common relationship in all four regions, as well.</h3>
+        <br>
+        <br>
     </div>
-    
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -82,6 +84,35 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+
+    <script>
+        d3.select("h1")
+            .transition()
+            .duration(3000)
+            .style("color", "black");
+    </script>
+
+    <script>
+        d3.select("h4")
+            .transition()
+            .duration(3000)
+            .style("color", "black");
+    </script>
+
+    <script>
+        d3.select("h2")
+            .transition()
+            .duration(3000)
+            .style("color", "white");
+    </script>
+
+    <script>
+        d3.select("h3")
+            .transition()
+            .duration(3000)
+            .style("color", "white");
+    </script>
+
 
 
 
